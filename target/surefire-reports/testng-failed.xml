@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Test]">
+  <test name="validatePatientDetails(failed)" preserve-order="false">
+    <classes>
+      <class name="com.atmecs.openmrs.testscripts.LoginTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="validateAllTheDetailsOfthePatient"/>
+        </methods>
+      </class>
+      <class name="com.atmecs.openmrs.testscripts.RegisterPatientTest">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="validatePatientRegistrationAndMerging(failed)" preserve-order="false">
+    <classes>
+      <class name="com.atmecs.openmrs.testscripts.LoginTest">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class>
+      <class name="com.atmecs.openmrs.testscripts.RegisterPatientTest">
+        <methods>
+          <include name="validatePatientRegistrationAndMerging"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 3.276 s <<< FAILURE! - in TestSuite
+com.atmecs.openmrs.testscripts.LoginTest.openBrowser  Time elapsed: 2.359 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/google/gson/JsonElement
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonElement
+
+com.atmecs.openmrs.testscripts.RegisterPatientTest.openBrowser  Time elapsed: 0.649 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/google/gson/JsonElement
+Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonElement
+
